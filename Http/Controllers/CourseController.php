@@ -35,7 +35,7 @@ class CourseController extends Controller
         //教授名が空白の場合
         if (empty($search2)) {
 
-            if(in_array($search3, ['日吉', '三田', '湘南藤沢'])) {
+            if(in_array($search3, ['日吉', '三田', 'SFC'])) {
                 $results = $lectures->where('campus', $search3)->where('lecture_name', 'like', '%'.$search1.'%')->get();
             }else {
                 $results = $lectures->where('lecture_name', 'like', '%'.$search1.'%')->get();
@@ -96,5 +96,6 @@ class CourseController extends Controller
         $subject->user()->associate(Auth::user());
         $subject->save();
 
+        return redirect()->back();
     }
 }
