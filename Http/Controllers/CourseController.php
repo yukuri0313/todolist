@@ -24,8 +24,7 @@ class CourseController extends Controller
             ]);
     }
 
-    public function match(UpdateRequest $request) {
-        dd(Auth::user());
+    public function match(Request $request) {
         $lectures = Course::query();
 
         //入力内容の取得
