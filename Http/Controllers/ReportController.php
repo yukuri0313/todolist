@@ -16,7 +16,7 @@ class ReportController extends Controller
 
         $uncompletedreports = $reports->where('user_id', $stu)->where('completed_or_not', 1)->get();
         $donereports = $reports->where('user_id', $stu)->where('completed_or_not', 2)->get();
-        
+
         return view('reports.report')->with([
             "uncompletedreports" => $uncompletedreports,
             "donereports" => $donereports,
@@ -36,7 +36,7 @@ class ReportController extends Controller
     public function append(Request $request, $id) {
         $courses = Course::find($id);
         $course_id = $courses->id;
-        
+
         $tasks = new Report();
         $tasks->user_id = Auth::id();
         $tasks->course_id = $course_id;
@@ -46,5 +46,10 @@ class ReportController extends Controller
         $tasks->deadline = $request->deadline;
         $tasks->completed_or_not = 1;
         $tasks->save();
+    }
+
+    public function complete(Report $report) {
+        $report->completed_or_not = 2;
+        $report->save();
     }
 }
