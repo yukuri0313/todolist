@@ -14,7 +14,7 @@ class ReportController extends Controller
         $reports = Report::query();
         $stu = Auth::id();
 
-        $uncompletedreports = $reports->where('user_id', $stu)->where('completed_or_not', 1)->get();
+        $uncompletedreports = $reports->where('user_id', $stu)->where('completed_or_not', 1)->orderby('deadline', 'asc')->get();
         $donereports = $reports->where('user_id', $stu)->where('completed_or_not', 2)->get();
 
         return view('reports.report')->with([
