@@ -4,6 +4,7 @@ namespace App;
 
 use App\Models\Registration;
 use App\Models\Report;
+use App\Models\Chat;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -45,5 +46,9 @@ class User extends Authenticatable
 
     public function UserReport() {
         return $this->hasMany(Report::class);
+        }
+
+    public function UserChat() {
+        return $this->hasMany(Chat::class);
         }
 }

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Registration;
+use App\Models\Chat;
 
 class Course extends Model
 {
@@ -18,4 +19,8 @@ class Course extends Model
     public function CourseReport() {
     return $this->hasMany(Registration::class);
     }
+    
+    public function CourseChat() {
+        return $this->hasMany(Chat::class);
+        }
 }
