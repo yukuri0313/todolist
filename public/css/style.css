@@ -1,0 +1,24 @@
+body {
+    background-color: #000000;
+}
+
+header {
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff
+}
+
+p {
+    font-size: 35px;
+    color: #ffffff;
+    font-family:serif;
+    font-style:italic;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color:#ffffff;
+    width:100%;
+    height: 50px;
+}

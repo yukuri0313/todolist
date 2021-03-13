@@ -1,0 +1,33 @@
+.container {
+    width: 40%;
+    margin-top: 100px;
+}
+
+form {
+    padding: 20px;
+    background-color:#FFFFEE
+}
+
+.title {
+    text-align:center; 
+    margin-top: 20px;
+    margin-bottom: 30px
+}
+
+.must {
+	background: #FF1A00;
+}
+
+.optional {
+	background: #999;
+}
+
+.must,
+.optional {
+	color: #FFF;
+	border-radius: 3px;
+	font-size: 6px;
+	margin-left: 10px;
+	padding: 2px 4px;
+	letter-spacing: 0.2em;
+}
