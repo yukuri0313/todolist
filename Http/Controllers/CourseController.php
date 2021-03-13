@@ -16,7 +16,7 @@ class CourseController extends Controller
         $courses = DB::select("SELECT * FROM courses WHERE campus='日吉'");
         $courses2 = DB::select("SELECT * FROM courses WHERE campus='三田'" );
         $courses3 = DB::select("SELECT * FROM courses WHERE campus='SFC'" );
-        //return view('courses.course', ['courses' => $courses], ['courses2' => $courses2], ['courses3' => $courses3]);
+       
         return view('courses.course')->with([
             "courses" => $courses,
             "courses2" => $courses2,
