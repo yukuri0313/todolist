@@ -21,6 +21,7 @@
                 </div>
                 <div class="card-body">
                 @foreach($coursechats as $coursechat)
+                    {{ $coursechat->user->name }}
                     {{ $coursechat->statement }}<hr>
                 @endforeach
                 </div>
