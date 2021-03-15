@@ -13,7 +13,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            
+            <div class="card">
+                <div class="card-header">
+                </div>
+            </div>
         </div>
         <div class="col-md-9">
             <div class="card">
@@ -22,13 +25,14 @@
                 </div>
                 <div class="card-body">
                 @foreach($coursechats as $coursechat)
-                    <div class="name">{{ $coursechat->user->name }}</div>
                     @if ( $coursechat->user_id == $speaker )
+                    <div class="myname">自分</div>
                     <div class="mycomment">{{ $coursechat->statement }}</div>  
-                    <div class="time">　　/{{ $coursechat->created_at }}</div>
+                    <div class="time">　　{{ $coursechat['created_at']->format('m/d/H:i') }}</div>
                     @else
+                    <div class="name">{{ $coursechat->user->name }}</div>
                     <div class="statement">{{ $coursechat->statement }}</div>
-                    <div class="time">　　/{{ $coursechat->created_at }}</div>
+                    <div class="time">　　{{ $coursechat['created_at']->format('m/d/H:i') }}</div>
                     @endif
                 @endforeach
                 </div>
