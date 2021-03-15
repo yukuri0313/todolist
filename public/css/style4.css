@@ -1,0 +1,17 @@
+.statement {
+    border-left: thick solid;
+    border-color: #66CCFF;
+    padding-left: 10px;
+}
+
+.mycomment {
+    border-left: thick solid;
+    border-color: #FF0033;
+    padding-left: 10px;
+}
+
+.time {
+    color: #AAAAAA;
+    font-size: 3px;
+    margin-bottom: 15px;
+}
