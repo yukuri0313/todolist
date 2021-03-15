@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Report extends Model
 {
-    public function report() {
+    public function user() {
         return $this->belongsTo(User::class);
     }
 

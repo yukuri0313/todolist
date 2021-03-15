@@ -12,15 +12,15 @@ class Course extends Model
         'lecture_name','professor_name','campus',
     ];
     
-    public function CourseRegistration() {
+    public function registration() {
     return $this->hasMany(Registration::class);
     }
 
-    public function CourseReport() {
-    return $this->hasMany(Registration::class);
+    public function report() {
+    return $this->hasMany(Report::class);
     }
     
-    public function CourseChat() {
+    public function chat() {
         return $this->hasMany(Chat::class);
         }
 }
