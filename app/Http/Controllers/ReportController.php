@@ -12,15 +12,13 @@ use Illuminate\Http\Request;
 class ReportController extends Controller
 {
     public function show() {
-        $reports = Report::query();
         $stu = Auth::id();
 
-        $uncompletedreports = $reports->where('user_id', $stu)->where('completed_or_not', 1)->orderby('deadline', 'asc')->get();
-        $donereports = $reports->where('user_id', $stu)->where('completed_or_not', 2)->get();
+        $uncompletedreports = Report::where('user_id', $stu)->where('completed_or_not', 1)->orderby('deadline', 'asc')->get();
+        $donereports = Report::where('user_id', $stu)->where('completed_or_not', 2)->get();
         
         $date = now(); 
         $dead = $date->addDay(3);
-        dd($donereports);
 
         return view('reports.report')->with([
             "uncompletedreports" => $uncompletedreports,
