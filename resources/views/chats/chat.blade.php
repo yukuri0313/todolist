@@ -13,12 +13,15 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
+            @foreach($takingclasses as $takingclass)
             <div class="card">
                 <div class="card-header">
+                    {{ $takingclass->course->lecture_name }}
                 </div>
                 <div class="card-">
                 </div>
             </div>
+            @endforeach
         </div>
         <div class="col-md-9">
             <div class="card">
@@ -26,7 +29,7 @@
                     {{ $course_name }}
                 </div>
                 <div class="card-body">
-                    <div div style="width:100%; height:550px; overflow:auto;">
+                    <div class="communication">
                     @foreach($coursechats as $coursechat)
                         @if ( $coursechat->user_id == $speaker )
                         <div class="myname">自分</div>
