@@ -38,7 +38,7 @@
                     @endif
                 @endforeach
                 <hr>
-                <form method="post">
+                <form method="post" action="{{ route('post.create', $coursechat->course_id) }}">
                 @csrf
                     <input type="textarea" name="saying" placeholder="メッセージを入力">
                     <button type="submit" class="btn btn-primary">送信</button>

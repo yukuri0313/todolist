@@ -25,4 +25,14 @@ class ChatController extends Controller
             'speaker' => $speaker
             ]); 
     }
+
+    public function create(Request $request, $id) {
+        $post = new Chat;
+        $post->statement = $request->saying;
+        $post->user()->associate(Auth::user());
+        $post->course_id = $id;
+        $post->save();
+
+        return redirect()->back();
+    }
 }
