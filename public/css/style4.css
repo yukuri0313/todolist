@@ -36,7 +36,7 @@ input {
 .communication {
     width: 100%;
     height: 560px;
-    overflow: auto;
+    overflow-y: scroll;
 }
 
 

@@ -15,10 +15,10 @@
         <div class="col-md-3">
             @foreach($takingclasses as $takingclass)
             <div class="card">
-                <div class="card-header">
-                    {{ $takingclass->course->lecture_name }}
-                </div>
-                <div class="card-">
+                <div class="card-body">
+                {{ $takingclass->course->lecture_name }}
+                <hr>
+
                 </div>
             </div>
             @endforeach
@@ -30,17 +30,19 @@
                 </div>
                 <div class="card-body">
                     <div class="communication">
-                    @foreach($coursechats as $coursechat)
-                        @if ( $coursechat->user_id == $speaker )
-                        <div class="myname">自分</div>
-                        <div class="mycomment">{{ $coursechat->statement }}</div>  
-                        <div class="time">　　{{ $coursechat['created_at']->format('n/j/H:i') }}</div>
-                        @else
-                        <div class="name">{{ $coursechat->user->name }}</div>
-                        <div class="statement">{{ $coursechat->statement }}</div>
-                        <div class="time">　　{{ $coursechat['created_at']->format('n/j/H:i') }}</div>
-                        @endif
-                    @endforeach
+                        <div id="scroll-inner">
+                            @foreach($coursechats as $coursechat)
+                                @if ( $coursechat->user_id == $speaker )
+                                <div class="myname">自分</div>
+                                <div class="mycomment">{{ $coursechat->statement }}</div>  
+                                <div class="time">　　{{ $coursechat['created_at']->format('n/j/H:i') }}</div>
+                                @else
+                                <div class="name">{{ $coursechat->user->name }}</div>
+                                <div class="statement">{{ $coursechat->statement }}</div>
+                                <div class="time">　　{{ $coursechat['created_at']->format('n/j/H:i') }}</div>
+                                @endif
+                            @endforeach
+                        </div>
                     </div>
                 <hr>
                 <form method="post" action="{{ route('post.create', $coursechat->course_id) }}">
@@ -53,5 +55,9 @@
         </div>
     </div>
 </div>
+<script>
+    let target = document.getElementById('scroll-inner');
+    target.scrollIntoView(false);
+</script>
 </body>
 </html>
