@@ -14,13 +14,16 @@
     <div class="row">
         <div class="col-md-3">
             @foreach($takingclasses as $takingclass)
-            <div class="card">
+            <form method="post" action="{{ route('post.chat', $takingclass->course_id) }}">
+            @csrf
+            <div class="card card1">
                 <div class="card-body">
                 {{ $takingclass->course->lecture_name }}
                 <hr>
-
+                <button type="submit" class="btn btn-success .btn-sm">チャット画面へ</button>
                 </div>
             </div>
+            </form>
             @endforeach
         </div>
         <div class="col-md-9">
@@ -48,7 +51,7 @@
                 <form method="post" action="{{ route('post.create', $coursechat->course_id) }}">
                 @csrf
                     <input type="textarea" name="saying" placeholder="メッセージを入力">
-                    <button type="submit" class="btn btn-primary">送信</button>
+                    <button type="submit" class="btn btn-primary .btn-sm rounded-circle p-0">➡︎</button>
                 </form>
                 </div>
             </div>

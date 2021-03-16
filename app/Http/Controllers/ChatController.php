@@ -17,6 +17,7 @@ class ChatController extends Controller
        
         $takingclasses = Registration::where('user_id', $speaker)->get();
 
+
         $course = Course::find($id);
         $course_name = $course->lecture_name;
 
