@@ -33,6 +33,5 @@ class ChatController extends Controller
         $post->course_id = $id;
         $post->save();
 
-        return redirect()->back();
     }
 }
