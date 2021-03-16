@@ -16,6 +16,8 @@
             <div class="card">
                 <div class="card-header">
                 </div>
+                <div class="card-">
+                </div>
             </div>
         </div>
         <div class="col-md-9">
@@ -28,13 +30,17 @@
                     @if ( $coursechat->user_id == $speaker )
                     <div class="myname">自分</div>
                     <div class="mycomment">{{ $coursechat->statement }}</div>  
-                    <div class="time">　　{{ $coursechat['created_at']->format('m/d/H:i') }}</div>
+                    <div class="time">　　{{ $coursechat['created_at']->format('n/j/H:i') }}</div>
                     @else
                     <div class="name">{{ $coursechat->user->name }}</div>
                     <div class="statement">{{ $coursechat->statement }}</div>
-                    <div class="time">　　{{ $coursechat['created_at']->format('m/d/H:i') }}</div>
+                    <div class="time">　　{{ $coursechat['created_at']->format('n/j/H:i') }}</div>
                     @endif
                 @endforeach
+                <hr>
+                <form method="post">
+                <input type="textarea" name="saying" >
+                </form>
                 </div>
             </div>
         </div>

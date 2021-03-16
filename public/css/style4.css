@@ -1,3 +1,7 @@
+.container {
+    width: 60%;
+}
+
 .statement {
     border-left: thick solid;
     border-color: #66CCFF;
