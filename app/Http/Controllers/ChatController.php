@@ -13,8 +13,7 @@ class ChatController extends Controller
     public function show($id) {
         $speaker = Auth::id();
 
-        $allstatements = Chat::query();
-        $coursechats = $allstatements->where('course_id', $id)->orderby('created_at', 'asc')->get();
+        $coursechats = Chat::where('course_id', $id)->orderby('created_at', 'asc')->get();
        
         $takingclasses = Registration::where('user_id', $speaker)->get();
 
