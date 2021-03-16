@@ -39,7 +39,9 @@
                 @endforeach
                 <hr>
                 <form method="post">
-                <input type="textarea" name="saying" >
+                @csrf
+                    <input type="textarea" name="saying" placeholder="メッセージを入力">
+                    <button type="submit" class="btn btn-primary">送信</button>
                 </form>
                 </div>
             </div>
