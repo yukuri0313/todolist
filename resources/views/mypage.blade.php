@@ -29,7 +29,7 @@
             <tbody>
                 @foreach($registrations as $period => $row)
                     <tr>
-                    <th scope="row">1</th>
+                    <th scope="row">{{ $period }}</th>
                     @foreach($row as $day => $registration)
                         <td>
                         @if($registration)
