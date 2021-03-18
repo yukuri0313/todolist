@@ -1,27 +1,20 @@
-　@extends('layouts.app')
-<ul>
-    <h1>日吉</h1>
-  　<div class="container">
-    @foreach($courses as $course)
-    <div class="card">
-        <div class="card-header">{{ $course->lecture_name }}</div>
-        <div class="card-body">担当教授：{{ $course->professor_name }}　単位数：{{ $course->unit }}</div>
-    </div>
-    @endforeach
-    <h1>三田</h1>
-    <div class="container">
-    @foreach($courses2 as $course2)
-    <div class="card">
-        <div class="card-header">{{ $course2->lecture_name }}</div>
-        <div class="card-body">担当教授：{{ $course2->professor_name }}　単位数：{{ $course2->unit }}</div>
-    </div>
-    @endforeach
-    <h1>SFC</h1>
-    <div class="container">
-    @foreach($courses3 as $course3)
-    <div class="card">
-        <div class="card-header">{{ $course3->lecture_name }}</div>
-        <div class="card-body">担当教授：{{ $course3->professor_name }}　単位数：{{ $course3->unit }}</div>
-    </div>
-    @endforeach
-</ul>
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <!-- css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ asset('css/style5.css') }}">
+
+  <title>Document</title>
+
+</head>
+<body>
+  
+</body>
+</html>
