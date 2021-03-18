@@ -31,7 +31,7 @@
                 <td>{{ $uncompletedreport->name }}</td>
                 <td>{{ $uncompletedreport->outline }}</td>
                 <td>{{ $uncompletedreport->words }}</td>
-                @if ( $uncompletedreport->deadline < $dead )
+                @if ( $date < $uncompletedreport->deadline && $uncompletedreport->deadline < $dead )
                 <td style="color: red;">{{ $uncompletedreport->deadline }}</td>
                 @else
                 <td>{{ $uncompletedreport->deadline }}</td>

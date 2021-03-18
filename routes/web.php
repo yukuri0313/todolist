@@ -37,6 +37,8 @@ Route::post('complete/{report}', 'ReportController@complete')->name('post.comple
 
 Route::post('courses/{id}/talk', 'ChatController@show')->name('post.chat');
 
+Route::get('courses/{id}/talk', 'ChatController@show');
+
 Route::post('{id}/create', 'ChatController@create')->name('post.create');
 
 

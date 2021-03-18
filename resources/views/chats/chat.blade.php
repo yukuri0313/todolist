@@ -50,7 +50,7 @@
                 <hr>
                 <form method="post" action="{{ route('post.create', $coursechat->course_id) }}">
                 @csrf
-                    <input type="textarea" name="saying" placeholder="メッセージを入力">
+                    <input type="textarea" name="saying" placeholder="メッセージを入力" required>
                     <button type="submit" class="btn btn-primary .btn-sm rounded-circle p-0">➡︎</button>
                 </form>
                 </div>

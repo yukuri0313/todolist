@@ -11,10 +11,24 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ asset('css/style5.css') }}">
 
-  <title>Document</title>
-
+  <title>授業一覧</title>
 </head>
 <body>
-  
+  <header>授業一覧</header>
+  <section class="container">
+  <form>
+  <button data-hover="Click" type="submit"><div>日吉</div></button>
+  </form>
+  </section>
+  <section class="container">
+  <form>
+  <button data-hover="Click" type="submit"><div>三田</div></button>
+  </form>
+  </section>
+  <section class="container">
+  <form>
+  <button data-hover="Click" type="submit"><div>SFC</div></button>
+  </form>
+  </section>
 </body>
 </html>

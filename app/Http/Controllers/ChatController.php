@@ -36,5 +36,7 @@ class ChatController extends Controller
         $post->user()->associate(Auth::user());
         $post->course_id = $id;
         $post->save();
+
+        return redirect()->back();
     }
 }
