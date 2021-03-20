@@ -51,10 +51,14 @@ class ReportController extends Controller
         $tasks->deadline = $request->deadline;
         $tasks->completed_or_not = 1;
         $tasks->save();
+
+        return redirect('mypage');
     }
 
     public function complete(Report $report) {
         $report->completed_or_not = 2;
         $report->save();
+
+        return redirect('todo');
     }
 }
