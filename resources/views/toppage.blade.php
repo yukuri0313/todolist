@@ -37,18 +37,48 @@
         <a href="/login" class="simple_button">はじめる</a>
         </div>
         <div class="col-md-8">
-            <img src="img/img01.jpg" alt="">
+            <img class="img01" src="img/img01.jpg" alt="">
         </div>
     </div>
 </div>
 <div class="container" style="width: 60%; margin-top:100px;" >
-    <h2 id="survice" class="fs-4" style="font-family: 'Courier New', Courier, monospace; text-align: center;">Survice</h2>
+        <h2 id="survice" class="fs-4" style="font-family: 'Courier New', Courier, monospace; text-align: center;"><i class="material-icons">accessibility</i>Survice</h2>
+        <br>
+    <div class="row">
+        <div class="col-md-4" style="display: flex; justify-content: center; align-items: center;">
+            <p class="description">レポート管理も、<br>授業情報の取得も、<br>これひとつで。</p>
+        </div>
+        <div class="col-md-8">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="img/img01.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="img/img01.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="img/img01.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="container" style="width: 60%">
-    <h2  id="aboutus" class="fs-4" style="font-family: 'Courier New', Courier, monospace; text-align: center;">About Us</h2>
+<div class="container" style="width: 60%; margin-top:60px;">
+    <h2  id="aboutus" class="fs-4" style="font-family: 'Courier New', Courier, monospace; text-align: center;"><i class="material-icons">zoom_in</i>About Us</h2>
+    <br>
+    <p>制作者　　　　　栗原　悠</p>
+    <hr>
+    <p>職業　　　　　　慶應義塾大学文学部在籍中　大学2年</p>
+    <hr>
 </div>
-<div class="container" style="width: 60%">
-    <h2 id="contactus" class="fs-4" style="font-family: 'Courier New', Courier, monospace; text-align: center;">Contact Us</h2>
+<div class="container" style="width: 60%; margin-top:60px;">
+    <h2 id="contactus" class="fs-4" style="font-family: 'Courier New', Courier, monospace; text-align: center;"><i class="material-icons">contact_page</i>Contact Us</h2>
+    <br>
+    <br>
+    <input type="textarea">
+    <button class="simple_button contact_button">送信</button>
 </div>
 </body>
 </html>
