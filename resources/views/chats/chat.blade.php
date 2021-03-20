@@ -1,3 +1,6 @@
+@extends('layouts.same')
+
+@section('content')
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -64,3 +67,4 @@
 </script>
 </body>
 </html>
+@endsection

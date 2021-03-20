@@ -24,7 +24,7 @@
         <a class="nav-link" href="{{ url('todo') }}" style="color:black">レポート管理画面へ</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="{{ url('search') }}" style="color:black">授業検索画面へ</a>
+        <a class="nav-link" href="{{ url('search') }}" style="color:black">授業検索＆登録画面へ</a>
       </li>
     </ul>
     </div>

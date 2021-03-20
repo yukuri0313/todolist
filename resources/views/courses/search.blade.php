@@ -14,7 +14,7 @@
         <title>授業検索</title>
     </head>
     <body>
-        <header><i class="material-icons" style="margin-bottom: -3px;">search</i>Search Courses</header>
+        <header><i class="material-icons" style="margin-bottom: -3px;">search</i>Search and Register Courses</header>
         <div class="container" style="margin-top:50px;">
             <div class="row">
                 <div class="col-sm-4">
