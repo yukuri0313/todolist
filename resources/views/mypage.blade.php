@@ -1,9 +1,9 @@
 @extends('layouts.common')
 
 @section('content')
-    <header style="text-align: center; margin-bottom:50px;" >マイページ</header>
-        <p>ようこそ、{{ Auth::user()->name }}さん。</p>
-    <strong style="margin-left: 30px;">
+    <header style="text-align: center; margin-bottom:30px; margin-top:30px; margin-left:5%; font-family: 'Courier New', Courier, monospace; font-size: 30px; float:left">Mypage</header>
+    <p style="margin-right: 5%; text-align:right; margin-top:20px">ようこそ、{{ Auth::user()->name }}さん。</p>
+    <strong style="margin-left: 5%;">
     レポート登録をするには<button class="btn btn-success .btn-sm rounded-circle p-0" style="width:2rem;height:2rem; margin-right:3px;">R</button>を、
     授業ごとのチャットを行うには<button class="btn btn-info .btn-sm rounded-circle p-0" style="width:2rem;height:2rem;">C</button>を押してください。</strong>
     <div class="container" style="margin-top:50px;">
