@@ -17,22 +17,22 @@
 
   <title>授業一覧</title>
 </head>
-<body>
+<body style="height: 100%; background-image: url(img02.png); ">
   <header><i class="material-icons" style="margin-bottom: -3px;">list</i>Course List</header>
   <section class="container">
     <div class="row">
       <div class="col-md-4">
-      <form>
+      <form action="{{ route('course.hiyoshi') }}" method="get">
       <button data-hover="Click" type="submit"><div>日吉</div></button>
       </form>
       </div>
       <div class="col-md-4">
-      <form>
+      <form action="{{ route('course.mita') }}" method="get">
       <button data-hover="Click" type="submit"><div>三田</div></button>
       </form>
       </div>
       <div class="col-md-4">
-      <form>
+      <form action="{{ route('course.sfc') }}" method="get">
       <button data-hover="Click" type="submit"><div>SFC</div></button>
       </form>
       </div>

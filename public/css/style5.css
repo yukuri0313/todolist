@@ -24,6 +24,7 @@ html, body{background: rgb(236, 240, 241);}
       border: 2px solid #111;
       padding: 15px 50px;
       overflow: hidden;
+      outline: none;
     }
 
     /*button:before (attr data-hover)*/
