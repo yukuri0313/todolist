@@ -29,13 +29,16 @@
             <p style="text-align: center;"><a href="#contactus"><i class="material-icons">contact_page</i>Contact Us</a></p>
         </div>
     </div>
-</div>
-<div class="row" style="margin-top: 40px;">
-    <div class="col-md-4" style="display: flex; justify-content: center; align-items: center;">
-        <p class="fw-lighter" style="font-family: 'Courier New', Courier, monospace; text-align: center;">The Virtual Campus is out there.</p>
+    <div class="container" style="width: 60%; margin-top:40px;" >
+    <p class="fw-lighter">「　The Virtual Campus is Here.　」</p>
     </div>
-    <div class="col-md-8">
-        <img src="img/img01.jpg" alt="">
+    <div class="row" style="margin-top: 40px;">
+        <div class="col-md-4" style="display: flex; justify-content: center; align-items: center;">
+        <a href="/login" class="simple_button">はじめる</a>
+        </div>
+        <div class="col-md-8">
+            <img src="img/img01.jpg" alt="">
+        </div>
     </div>
 </div>
 <div class="container" style="width: 60%; margin-top:100px;" >
