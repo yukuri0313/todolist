@@ -19,7 +19,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('course', 'CourseController@campus_sort');
+//各授業一覧表示
+Route::get('course1', 'CourseController@campus_sort_hiyoshi')->name('course.hiyoshi');
+Route::get('course2', 'CourseController@campus_sort_mita')->name('course.mita');
+Route::get('course3', 'CourseController@campus_sort_sfc')->name('course.sfc');
 
 Route::get('search', 'CourseController@match')->middleware('auth')->name('post.search');
 

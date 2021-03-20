@@ -12,16 +12,22 @@ use App\Http\Requests\User\UpdateRequest;
 class CourseController extends Controller
 {
     //選択した曜日によって変数に格納する代入値を変化させる
-    public function campus_sort() {
+    public function campus_sort_hiyoshi() {
         $courses = DB::select("SELECT * FROM courses WHERE campus='日吉'");
-        $courses2 = DB::select("SELECT * FROM courses WHERE campus='三田'" );
+
+        return view('courses.hiyoshi', ['courses' => $courses]);
+    }
+
+    public function campus_sort_mita() {
+        $courses2 = DB::select("SELECT * FROM courses WHERE campus='三田'");
+
+        return view('courses.mita', ['courses2' => $courses2]);
+    }
+
+    public function campus_sort_sfc() {
         $courses3 = DB::select("SELECT * FROM courses WHERE campus='SFC'" );
-       
-        return view('courses.course')->with([
-            "courses" => $courses,
-            "courses2" => $courses2,
-            "courses3" => $courses3
-            ]);
+
+        return view('courses.sfc', ['courses3' => $courses3]);
     }
 
     public function match(Request $request) {
