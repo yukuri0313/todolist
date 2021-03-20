@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SFC</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+
 </head>
 <body>
-<header><i class="material-icons" style="margin-bottom: -3px;">list</i>Course List @ Hiyoshi Campus</header>
+<header><i class="material-icons" style="margin-bottom: -3px;">list</i>Course List @ ShonanFujisawa Campus</header>
     <div class="container">
     <table class="table">
         <thead>
