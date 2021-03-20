@@ -2,6 +2,7 @@
 
 @section('content')
     <header style="text-align: center; margin-bottom:50px;" >マイページ</header>
+        <p>ようこそ、{{ Auth::user()->name }}さん。</p>
     <strong style="margin-left: 30px;">
     レポート登録をするには<button class="btn btn-success .btn-sm rounded-circle p-0" style="width:2rem;height:2rem; margin-right:3px;">R</button>を、
     授業ごとのチャットを行うには<button class="btn btn-info .btn-sm rounded-circle p-0" style="width:2rem;height:2rem;">C</button>を押してください。</strong>

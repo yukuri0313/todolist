@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card" style="text-align:center;">
-                <div class="card-header">登録が完了しました</div>
+                <div class="card-header">Logged In !</div>
 
                 <div class="card-body">
                     @if (session('status'))
