@@ -23,7 +23,7 @@
                 <div class="card-body">
                 {{ $takingclass->course->lecture_name }}
                 <hr>
-                <button type="submit" class="btn btn-success .btn-sm">チャット画面へ</button>
+                <button type="submit" class="btn btn-outline-dark .btn-sm">チャット画面へ</button>
                 </div>
             </div>
             </form>

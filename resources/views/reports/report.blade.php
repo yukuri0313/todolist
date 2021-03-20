@@ -1,15 +1,20 @@
-<!DOCTYPE html
+@extends('layouts.similar')
+
+@section('content')
+<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        
-    <title>マイページ</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>レポート管理</title>
 </head>
 <body>
-<header style="text-align: center; margin-bottom: 50px;">レポート管理</header>
+<header><i class="material-icons" style="margin-bottom: -3px;">schedule</i>To do List</header>
+<h3 style="text-align: center; margin: 50px; font-family: 'Courier New', Courier, monospace;">Uncompleted Report</h3>
 <div class="container">
     <table class="table">
         <thead>
@@ -47,7 +52,7 @@
         </tbody>
     </table>
 </div>
-<header style="text-align: center; margin: 50px;">提出済レポート</header>
+<h3 style="text-align: center; margin: 50px; font-family: 'Courier New', Courier, monospace;">Completed Report</h3>
 <div class="container">
 <table class="table">
         <thead>
@@ -64,7 +69,7 @@
         <tbody>
             @foreach($donereports as $donereport)
                 <tr>
-                <th scope="row">1</th>
+                <th scope="row">・</th>
                 <td>{{ $donereport->course->lecture_name }}</td>
                 <td>{{ $donereport->name }}</td>
                 <td>{{ $donereport->outline }}</td>
@@ -77,3 +82,23 @@
     </div>
 </body>
 </html>
+@endsection
+
+<style>
+    header {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  margin-left: 10%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.material-icons{
+  display: inline-flex;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 20px;
+  font-size: 50px;
+  }
+
+</style>
