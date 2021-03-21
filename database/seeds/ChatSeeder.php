@@ -13,19 +13,19 @@ class ChatSeeder extends Seeder
     {
         Chat::create([
             'user_id' => 1,
-            'course_id' => 21,
+            'course_id' => 1,
             'statement' => '今回の課題は必須提出なのですか？'
         ]);
         
         Chat::create([
             'user_id' => 2,
-            'course_id' => 21,
+            'course_id' => 1,
             'statement' => 'そうです！'
         ]);
 
         Chat::create([
             'user_id' => 1,
-            'course_id' => 21,
+            'course_id' => 1,
             'statement' => 'ありがとうございます！'
         ]);
     }
