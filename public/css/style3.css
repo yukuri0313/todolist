@@ -31,3 +31,18 @@ form {
 	padding: 2px 4px;
 	letter-spacing: 0.2em;
 }
+
+header {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 30px;
+  }
+  
+  .material-icons{
+	display: inline-flex;
+	vertical-align: middle;
+	margin-top: -5px;
+	margin-right: 20px;
+	font-size: 50px;
+	}

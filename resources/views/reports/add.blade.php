@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="{{ asset('css/style3.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <title>レポート追加</title>
 </head>
@@ -13,7 +14,7 @@
     <form method="post" action="{{ route('post.add', $addedreportsids) }}" class="row g-3 border border-3 rounded-3"> 
     @csrf
         <div class="title">
-        <h2>レポート追加</h2>
+        <header><i class="material-icons" style="margin-bottom: -3px;">add_box</i>Add the Report</header>
         </div>
         <div class="col-md-6">
             <label for="lecture_name" class="form-label">講義名</label>
