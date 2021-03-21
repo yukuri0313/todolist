@@ -23,7 +23,6 @@
 
 
 # Usage
-デモの実行方法など、XXXXXXの基本的な使い方を説明する
 
 - ①　https://secure-harbor-95867.herokuapp.com/ にアクセス
 - ②　トップページの画像横「はじめる」ボタンをクリック
