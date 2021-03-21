@@ -6,7 +6,10 @@
 - 時間割機能
 
 # DEMO
-![demo](doc/demo.gif)
+![demo](img/img03.png)
+![demo](img/img04.png)
+![demo](img/img05.png)
+![demo](img/img07.png)
 
 # Features
 - レポート管理機能により、オンライン授業で蓄積しがちなレポートを適切に管理。
