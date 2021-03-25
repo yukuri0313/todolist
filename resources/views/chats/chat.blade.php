@@ -22,7 +22,7 @@
     <div class="row">
         <div class="col-md-3">
             <div class="otherchat">
-                <p><i class="material-icons" style="margin-bottom: -3px;">list</i>Chat Room</p>
+                <p><i class="material-icons" style="margin-bottom: -3px;">chat_bubble_outline</i>Chat Room</p>
                 <hr style="background-color:white; height: 2px">
                 @foreach($takingclasses as $takingclass)
                 <form method="post" action="{{ route('post.chat', $takingclass->course_id) }}">
