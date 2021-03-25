@@ -4,7 +4,7 @@
     margin-bottom: 20px;
 }
 
-.btn-primary {
+.btn {
     width:2rem;
     height:2rem; 
     margin-right:3px;
@@ -75,7 +75,21 @@ span {
 }
 
 p {
+    font-family: 'Courier New', Courier, monospace;
     color: white
+}
+
+.material-icons{
+    display: inline-flex;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 20px;
+    font-size: 50px;
+    }
+
+h2 {
+    margin-left: 5%;
+
 }
 
 

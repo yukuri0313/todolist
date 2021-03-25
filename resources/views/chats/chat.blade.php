@@ -13,6 +13,8 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <title>チャット画面</title>
 </head>
 <body>
@@ -20,7 +22,7 @@
     <div class="row">
         <div class="col-md-3">
             <div class="otherchat">
-                <p>チャットルーム</p>
+                <p><i class="material-icons" style="margin-bottom: -3px;">list</i>Chat Room</p>
                 <hr style="background-color:white; height: 2px">
                 @foreach($takingclasses as $takingclass)
                 <form method="post" action="{{ route('post.chat', $takingclass->course_id) }}">
@@ -33,10 +35,9 @@
             </div>
         </div>
         <div class="col-md-9">
-            <div class="card">
-                <div class="card-header">
-                    {{ $course_name }}
-                </div>
+                    <h2>{{ $course_name }}</h2>
+                <hr>
+                <div class="card">
                 <div class="card-body">
                     <div class="communication">
                         <div id="scroll-inner">

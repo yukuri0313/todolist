@@ -49,3 +49,6 @@ Route::get('courses/{id}/talk', 'ChatController@show');
 Route::post('{id}/create', 'ChatController@create')->name('post.create');
 
 
+
+
+
