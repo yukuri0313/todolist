@@ -10,7 +10,7 @@
     <title></title>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-white shadow-sm">
+<nav class="navbar navbar-expand-sm navbar-dark bg-white shadow-sm">
   <a class="navbar-brand" href="{{ url('/') }}" style="color:black">トップへ戻る</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
         <a class="nav-link" href="{{ url('todo') }}" style="color:black">レポート管理画面へ</a>
       </li>
     </ul>
-    </div>
+  </div>
 </nav>
 </body>
 @yield('content')

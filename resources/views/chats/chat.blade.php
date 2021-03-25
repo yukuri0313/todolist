@@ -10,24 +10,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style4.css') }}">
 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
     <title>チャット画面</title>
 </head>
 <body>
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            @foreach($takingclasses as $takingclass)
-            <form method="post" action="{{ route('post.chat', $takingclass->course_id) }}">
-            @csrf
-            <div class="card card1">
-                <div class="card-body">
-                {{ $takingclass->course->lecture_name }}
-                <hr>
-                <button type="submit" class="btn btn-outline-dark .btn-sm">チャット画面へ</button>
-                </div>
+            <div class="otherchat">
+                <p>チャットルーム</p>
+                <hr style="background-color:white; height: 2px">
+                @foreach($takingclasses as $takingclass)
+                <form method="post" action="{{ route('post.chat', $takingclass->course_id) }}">
+                @csrf
+                    <span># {{ $takingclass->course->lecture_name }}</span>
+                    <button type="submit" class="btn1 btn btn-primary .btn-sm rounded-circle p-0">➡︎</button>
+                </form>
+                <hr style="background-color:white; height: 2px">
+                @endforeach
             </div>
-            </form>
-            @endforeach
         </div>
         <div class="col-md-9">
             <div class="card">

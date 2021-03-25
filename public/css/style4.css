@@ -11,13 +11,14 @@
 }
 
 .container {
-    width: 60%;
     margin-top: 20px;
 }
 
 .col-md-3 {
     height: 700px;
-    overflow:auto;
+    overflow: auto;
+    background-color:black;
+    border-radius: 20px; 
 }
 
 .statement {
@@ -55,6 +56,28 @@ input {
     height: 560px;
     overflow-y: scroll;
 }
+
+.btn1 {
+    margin-left: 40px;
+    size: 3px;
+    background-color: black;
+    border: none;
+}
+
+span {
+    color: white;
+}
+
+.otherchat {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: white
+}
+
 
 
 
